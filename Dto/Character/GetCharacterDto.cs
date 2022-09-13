@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace dotnet_rpg.models
+namespace dotnet_rpg.Dto.Character
 {
-    public class character
+    public class GetCharacterDto
     {
-                public int Id { get; set; }
+        public int Id { get; set; }
 
         public String Name { get; set; } = "Learn";
 
@@ -18,5 +18,6 @@ namespace dotnet_rpg.models
           //  public int MyProperty { get; set; }
 
           public  Rpgclass Class { get; set; }= Rpgclass.knight;
+  
     }
 }

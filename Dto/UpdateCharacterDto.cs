@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace dotnet_rpg.models
+namespace dotnet_rpg.Dto
 {
-    public class character
+    public class UpdateCharacterDto
     {
-                public int Id { get; set; }
+         public int Id { get; set; }
 
         public String Name { get; set; } = "Learn";
 

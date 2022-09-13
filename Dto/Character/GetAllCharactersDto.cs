@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace dotnet_rpg.models
+namespace dotnet_rpg.Dto.Character
 {
-    public class character
+    public class GetAllCharactersDto
     {
                 public int Id { get; set; }
-
-        public String Name { get; set; } = "Learn";
+                public String Name { get; set; } = "Learn";
 
             public int Hitpoints { get; set; } = 100;
             public int stringth { get; set; }= 10;
