@@ -29,6 +29,19 @@ namespace dotnet_rpg.Controllers
             return Ok(await _characterService.GetAllCharacters());
         }
 
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<ServiceResponse<List<GetAllCharactersDto>>>>Delete(int id)
+        {
+          //  return Ok(await _characterService.GetCharacterById(id));
+           var response = await _characterService.DeletCharacter(id);
+        if(response.Data == null)
+        {
+            return NotFound(response);
+        }
+         return Ok(response);
+
+}
+
         [HttpGet("{id}")]
         public async Task<ActionResult<ServiceResponse<GetAllCharactersDto>>>Getsingle(int id)
         {
@@ -37,6 +50,7 @@ namespace dotnet_rpg.Controllers
 }
 
         [HttpPost]
+        
         [Route("add")]
          public  async Task<ActionResult<List<ServiceResponse<GetAllCharactersDto>>>> AddCharacter(AddCharacterDto NewCharacter){
          return Ok(await _characterService.AddCharacter(NewCharacter));
