@@ -11,8 +11,8 @@ using dotnet_rpg.Data;
 namespace dotnet_rpg.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220914093804_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220914111205_InitialCre")]
+    partial class InitialCre
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -52,7 +52,7 @@ namespace dotnet_rpg.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("chara");
+                    b.ToTable("character");
                 });
 #pragma warning restore 612, 618
         }

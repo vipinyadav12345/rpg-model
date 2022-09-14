@@ -50,7 +50,7 @@ namespace dotnet_rpg.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("chara");
+                    b.ToTable("character");
                 });
 #pragma warning restore 612, 618
         }

@@ -4,12 +4,12 @@
 
 namespace dotnet_rpg.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class InitialCre : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "chara",
+                name: "character",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -23,14 +23,14 @@ namespace dotnet_rpg.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_chara", x => x.Id);
+                    table.PrimaryKey("PK_character", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "chara");
+                name: "character");
         }
     }
 }
