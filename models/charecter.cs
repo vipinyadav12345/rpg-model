@@ -7,16 +7,18 @@ namespace dotnet_rpg.models
 {
     public class character
     {
-                public int Id { get; set; }
+        public int Id { get; set; }
 
         public String Name { get; set; } = "Learn";
 
-            public int Hitpoints { get; set; } = 100;
-            public int stringth { get; set; }= 10;
-            public int defence { get; set; }=10;
-            public int inteligence { get; set; }=10;
+        public int Hitpoints { get; set; } = 100;
+        public int stringth { get; set; }= 10;
+        public int defence { get; set; }=10;
+        public int inteligence { get; set; }=10;
           //  public int MyProperty { get; set; }
 
-          public  Rpgclass Class { get; set; }= Rpgclass.knight;
+        public  Rpgclass Class { get; set; }= Rpgclass.knight;
+        public User? user { get; set; }
+     
     }
 }
