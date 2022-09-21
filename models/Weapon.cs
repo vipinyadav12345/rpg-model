@@ -12,5 +12,6 @@ namespace dotnet_rpg.models
         public string Name { get; set; } = string.Empty;
         public int Damage { get; set; }
         public character Character { get; set; }
+        public int characterId { get; set; }
     }
 }
