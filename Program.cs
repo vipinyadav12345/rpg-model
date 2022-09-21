@@ -39,8 +39,10 @@ builder.Services.AddScoped<ICharacterService ,CharacterService>();
                 ValidateAudience = false
         };
 
-        }) ;
+        });
 
+
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
 

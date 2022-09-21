@@ -16,6 +16,7 @@ namespace dotnet_rpg.Data
         }
     public DbSet<character> character { get; set; }
     public DbSet<User> users { get; set; }
+    public DbSet<Weapon> Weapons { get; set; }
     }
 
 }
