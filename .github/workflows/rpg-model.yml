@@ -1,0 +1,18 @@
+name: rpg-model
+
+on: push
+
+jobs:
+  super-lint:
+ name: Lint code base
+ runs-on: ubuntu-latest
+ steps:
+ -name: Checkout code
+ users: actions/vipinyadav12345
+ 
+ -name: Run rpg-model
+ users: github/vipinyadav12345
+ 
+ env:
+ DEFAULT_BRANCH:  main
+ GITHUB_TOKEN: {{ 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}}
